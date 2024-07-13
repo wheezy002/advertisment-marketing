@@ -1,58 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <title>Advertisment & marketing</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">WheeyTech</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">MARKETING</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <input class="srch" type="search" name=" " placeholder="Type To taxt">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
+<body style="background-color: darkslategray;">
+	<div class="container" style="padding:50px 50px;">
+	 
+	<form id="myForm" action="postApplication.php" method="POST">
+	<center><h1 class="row well alert alert-success">Zeketech Cyber <br> ONLINE APPLICATION</h1></center>
+	 <font color="red"><h6>Do <u>NOT</u> make any payment with the phone as it shall be initiated automatically at the end of the application</h6></font>
+	  <!-- One "tab" for each step in the form: -->
+	  <div class="tab current"><h2>Step 1: Applicant Details</h2>
+	  <div class="form-group">
+		<label for="ApplicantNames">Applicant Names </label>
+		<input type="text" id="names" name="names" placeholder="Input full names" required="" maxlength="30">
+		</div>
+			
+										<div class="form-group">
+										<label for="Gender">Gender</label>
+										<select name="gender" id="gender" class="form-control" required="">
+											<option value="" selected="">- Select -</option>
+											<option value="MALE">MALE</option>
+											<option value="FEMALE">FEMALE</option>
+										</select>
+										</div>
+				<div>						
+		<label for="DateOfBirth">Date of Birth</label>
+		<input type="text" class="form-control hasDatepicker" id="datepicker" name="dateofbirth" placeholder="Date of Birth" required="">
+		</div>
+		<div>
+		<label for="MaritalStatus">Marital Status</label>
+			<select name="maritalstatus" placeholder="maritalstatus" id="maritalstatus" class="form-control" required="">
+									<option value="" selected="">- Select -</option>
+									<option value="SINGLE">SINGLE</option>
+									<option value="MARRIED">MARRIED</option>
+									<option value="SEPARATED">SEPARATED</option>
+									</select>
+		</div>
+		<div>
+		<label for="Religion">Religion</label>
+			<select name="religion" id="religion" class="form-control" required="">
+									<option value="" selected="">- Select -</option>
+									<option value="1">CHRISTIANITY</option>
+									<option value="2">MUSLIM</option>
+									<option value="3">HINDU</option>
+									</select>
+			</div>
+		<div>			
+									<label for="NationalID">National ID No</label>
+		<input type="text" class="form-control" id="nationalid" name="nationalid" placeholder="National ID">
+		</div>
+		<div>
+					<label for="Nationality">Nationality</label>
+		      <select id="nationality" name="nationality" class="form-control" required="">
+			<option value="" selected="">- Select -</option>
+            <option value="1">KENYA</option><option value="2">TANZANIA</option><option value="3">UGANDA</option><option value="4">SUDAN</option><option value="5">SOMALIA</option><option value="6">RWANDA</option><option value="7">KOREA</option><option value="8">USA</option><option value="9">BURUNDI</option><option value="ID">Name</option>		</select>
+		</div>
+		<div>
+					<label for="constituencies">Constituency</label>
+		      <select id="constituencies" name="constituencies" class="form-control" required="">
+			<option value="" selected="">- Select -</option>
+            <option value="144">AINABKOI </option><option value="190">AINAMOI </option><option value="152">ALDAI </option><option value="234">ALEGO USONGA </option><option value="254">AWENDO </option><option value="174">BAHATI  </option><option value="28">BALAMBALA </option><option value="40">BANISSA </option><option value="160">BARINGO  </option><option value="159">BARINGO CENTRAL </option><option value="158">BARINGO NORTH  </option><option value="192">BELGUT  </option><option value="264">BOBASI </option><option value="263">BOMACHOGE BORABU </option><option value="265">BOMACHOGE CHACHE</option><option value="197">BOMET CENTRAL </option><option value="196">BOMET EAST </option><option value="261">BONCHARI </option><option value="236">BONDO </option><option value="273">BORABU </option><option value="231">BUDALANGI </option><option value="219">BUMULA  </option><option value="20">BURA </option><option value="191">BURETI </option><option value="207">BUTERE </option><option value="229">BUTULA  </option><option value="57">BUURI  </option><option value="58">CENTRAL IMENTI </option><option value="1">CHANGAMWE </option><option value="195">CHEPALUNGU </option><option value="140">CHERANGANY </option><option value="154">CHESUMEI </option><option value="61">CHUKA/IGAMBANG`OMBE </option><option value="30">DADAAB </option><option value="275">DAGORETI NORTH </option><option value="276">DAGORETTI SOUTH </option><option value="162">ELDAMA RAVINE  </option><option value="37">ELDAS </option><option value="284">EMBAKASI CENTRAL </option><option value="285">EMBAKASI EAST </option><option value="283">EMBAKASI NORTH </option><option value="282">EMBAKASI SOUTH </option><option value="286">EMBAKASI WEST </option><option value="155">EMGWEN  </option><option value="215">EMUHAYA  </option><option value="178">EMURUA DIKIRR </option><option value="137">ENDEBESS </option><option value="31">FAFI </option><option value="230">FUNYULA </option><option value="19">GALOLE </option><option value="15">GANZE </option><option value="27">GARISSA TOWNSHIP </option><option value="18">GARSEN </option><option value="110">GATANGA </option><option value="112">GATUNDU NORTH </option><option value="111">GATUNDU SOUTH </option><option value="235">GEM </option><option value="101">GICHUGU </option><option value="169">GILGIL </option><option value="116">GITHUNGURI </option><option value="213">HAMISIS   </option><option value="249">HOMA BAY TOWN </option><option value="52">IGEMBE CENTRAL  </option><option value="53">IGEMBE NORTH </option><option value="51">IGEMBE SOUTH  </option><option value="32">IJARA </option><option value="210">IKOLOMANI   </option><option value="49">ISIOLO NORTH </option><option value="50">ISIOLO SOUTH </option><option value="2">JOMVU </option><option value="113">JUJA </option><option value="119">KABETE </option><option value="246">KABONDO KASIPUL </option><option value="218">KABUCHAI </option><option value="131">KACHELIBA </option><option value="85">KAITI </option><option value="184">KAJIADO CENTRAL </option><option value="185">KAJIADO EAST </option><option value="183">KAJIADO NORTH </option><option value="187">KAJIADO SOUTH </option><option value="186">KAJIADO WEST </option><option value="13">KALOLENI </option><option value="288">KAMUKUNJI </option><option value="109">KANDARA </option><option value="220">KANDUYI </option><option value="104">KANGEMA </option><option value="77">KANGUDO </option><option value="129">KAPENGURIA </option><option value="145">KAPSERET </option><option value="247">KARACHUONYO </option><option value="280">KASARANI </option><option value="245">KASIPUL </option><option value="79">KATHIANI </option><option value="149">KEIYO NORTH </option><option value="150">KEIYO SOUTH </option><option value="146">KESSES </option><option value="208">KHWISERO  </option><option value="118">KIAMBAA </option><option value="117">KIAMBU </option><option value="278">KIBRA </option><option value="88">KIBWEZI EAST </option><option value="87">KIBWEZI WEST </option><option value="95">KIENI </option><option value="107">KIGUMO </option><option value="106">KIHARU </option><option value="120">KIKUYU </option><option value="177">KILGORIS </option><option value="11">KILIFI NORTH </option><option value="12">KILIFI SOUTH </option><option value="84">KILOME </option><option value="223">KIMILILI </option><option value="139">KIMININI </option><option value="10">KINANGO </option><option value="89">KINANGOP </option><option value="90">KIPIPIRI </option><option value="188">KIPKELION EAST </option><option value="189">KIPKELION WEST </option><option value="103">KIRINYAGA CENTRAL </option><option value="3">KISAUNI </option><option value="240">KISUMU CENTRAL </option><option value="238">KISUMU EAST </option><option value="239">KISUMU WEST </option><option value="72">KITUI CENTRAL </option><option value="73">KITUI EAST </option><option value="71">KITUI RURAL </option><option value="74">KITUI SOUTH </option><option value="70">KITUI WEST </option><option value="268">KITUTU CHACHE NORTH </option><option value="269">KITUTU CHACHE SOUTH </option><option value="270">KITUTU MASABA </option><option value="198">KONOIN </option><option value="171">KURESOI NORTH </option><option value="170">KURESOI SOUTH </option><option value="260">KURIA EAST </option><option value="259">KURIA WEST </option><option value="136">KWANZA </option><option value="44">LAFEY </option><option value="29">LAGDERA </option><option value="164">LAIKIPIA EAST  </option><option value="165">LAIKIPIA NORTH  </option><option value="163">LAIKIPIA WEST  </option><option value="48">LAISAMIS </option><option value="21">LAMU EAST </option><option value="22">LAMU WEST </option><option value="277">LANGATA </option><option value="122">LARI </option><option value="5">LIKONI </option><option value="200">LIKUYANI </option><option value="121">LIMURU </option><option value="126">LOIMA </option><option value="214">LUANDA  </option><option value="199">LUGARI </option><option value="8">LUNGA LUNGA </option><option value="202">LURAMBI </option><option value="81">MACHAKOS </option><option value="17">MAGARINI </option><option value="287">MAKADARA </option><option value="86">MAKUENI </option><option value="201">MALAVA </option><option value="16">MALINDI </option><option value="43">MANDERA EAST </option><option value="41">MANDERA NORTH </option><option value="42">MANDERA SOUTH </option><option value="39">MANDERA WEST </option><option value="63">MANYATTA </option><option value="60">MARA </option><option value="108">MARAGWA </option><option value="147">MARAKWET EAST </option><option value="148">MARAKWET WEST </option><option value="75">MASINGA </option><option value="228">MATAYOS </option><option value="290">MATHARE </option><option value="105">MATHIOYA </option><option value="96">MATHIRA </option><option value="9">MATUGA </option><option value="206">MATUNGU   </option><option value="78">MATUNGULU </option><option value="80">MAVOKO </option><option value="66">MBEERE NORTH </option><option value="65">MBEERE SOUTH </option><option value="251">MBITA </option><option value="83">MBOONI </option><option value="161">MOGOTIO  </option><option value="143">MOIBEN </option><option value="166">MOLO  </option><option value="156">MOSOP </option><option value="45">MOYALE </option><option value="7">MSAMBWENI </option><option value="216">MT. ELGON </option><option value="243">MUHORONI </option><option value="98">MUKURWENI </option><option value="205">MUMIAS EAST  </option><option value="204">MUMIAS WEST </option><option value="6">MVITA </option><option value="82">MWALA </option><option value="25">MWATATE </option><option value="100">MWEA </option><option value="69">MWINGI CENTRAL </option><option value="67">MWINGI NORTH </option><option value="68">MWINGI WEST </option><option value="168">NAIVASHA </option><option value="176">NAKURU TOWN  EAST </option><option value="175">NAKURU TOWN WEST </option><option value="227">NAMBALE  </option><option value="ID">Name</option><option value="153">NANDI HILLS </option><option value="180">NAROK EAST </option><option value="179">NAROK NORTH </option><option value="181">NAROK SOUTH </option><option value="182">NAROK WEST </option><option value="203">NAVAKHOLO </option><option value="93">NDARAGWA </option><option value="250">NDHIWA </option><option value="102">NDIA </option><option value="167">NJORO  </option><option value="46">NORTH HORR </option><option value="56">NORTH IMENTI </option><option value="272">NORTH MUGIRANGO </option><option value="244">NYAKACH </option><option value="4">NYALI </option><option value="242">NYANDO </option><option value="267">NYARIBARI CHACHE </option><option value="266">NYARIBARI MASABA </option><option value="258">NYATIKE </option><option value="99">NYERI TOWN </option><option value="92">OL'JOROK </option><option value="91">OL'KALOU </option><option value="97">OTHAYA </option><option value="132">POKOT SOUTH </option><option value="14">RABAI </option><option value="248">RANGWE </option><option value="237">RARIEDA </option><option value="173">RONGAI  </option><option value="253">RONGO </option><option value="279">ROYSAMBU </option><option value="281">RUARAKA </option><option value="115">RUIRU  </option><option value="64">RUNYENJES </option><option value="212">SABATIA   </option><option value="138">SABOTI </option><option value="47">SAKU </option><option value="135">SAMBURU EAST </option><option value="134">SAMBURU NORTH </option><option value="133">SAMBURU WEST </option><option value="241">SEME </option><option value="209">SHINYALU   </option><option value="130">SIGOR </option><option value="193">SIGOWET/SOIN </option><option value="217">SIRISIA  </option><option value="194">SOTIK </option><option value="59">SOUTH IMENTI  </option><option value="262">SOUTH MUGIRANGO</option><option value="141">SOY </option><option value="289">STAREHE </option><option value="252">SUBA  </option><option value="172">SUBUKIA </option><option value="255">SUNA EAST </option><option value="256">SUNA WEST </option><option value="35">TARBAJ </option><option value="23">TAVETA </option><option value="225">TESO NORTH </option><option value="226">TESO SOUTH </option><option value="94">TETU </option><option value="62">THARAKA  </option><option value="114">THIKA TOWN </option><option value="157">TIATY  </option><option value="55">TIGANIA EAST  </option><option value="54">TIGANIA WEST </option><option value="151">TINDERET </option><option value="224">TONGAREN  </option><option value="142">TURBO </option><option value="125">TURKANA CENTRAL </option><option value="128">TURKANA EAST </option><option value="123">TURKANA NORTH </option><option value="124">TURKANA SOUTH  </option><option value="127">TURKANA SOUTH </option><option value="232">UGENYA </option><option value="233">UGUNJA </option><option value="257">URIRI </option><option value="211">VIHIGA   </option><option value="26">VOI </option><option value="34">WAJIR EAST </option><option value="33">WAJIR NORTH </option><option value="38">WAJIR SOUTH </option><option value="36">WAJIR WEST </option><option value="221">WEBUYE EAST </option><option value="222">WEBUYE WEST </option><option value="271">WEST MUGIRANGO </option><option value="274">WESTLANDS </option><option value="24">WUNDANYI  </option><option value="76">YATTA </option>		</select>
+		</div>
+		
+			<div>			
+									<label for="Location">Resident location</label>
+		<input type="text" class="form-control" id="Location" name="Location" placeholder="Enter resident location" required="">
+		</div>
+		
+				<div>			
+									<label for="Location">Resident sub location</label>
+		<input type="text" class="form-control" id="SubLocation" name="SubLocation" placeholder="Enter sub resident location" required="">
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	  </div>
+	  <div class="tab"><h2>Step 2: Add Applicant Contact Details</h2>
+	  <div>
+		<label for="MailingAddress">Mailing Address e.g. P.O. Box 4461-30100 Eldoret</label>
+		<input type="text" class="form-control" name="mailingaddress" id="mailingaddress" placeholder="Mailing Address" required="">
+	  </div>
+	  <div>
+		<label for="MobileNo">Mobile No</label>
+		<input type="text" class="form-control" name="mobileno" id="mobileno" placeholder="Mobile No" required="">
+	  </div>
+	  <div>
+		<label for="email">Email Address</label>
+		<input type="email" class="form-control" id="email" name="email" placeholder="Email" required=""> 
+	  </div>
+	  
+	  </div>
+	  <div class="tab"><h2>Step 3: Add Parent/Guardian Contact Details</h2>
+	  
+	   <div>
+		<label for="ParentName">Parent/Guardian Names</label>
+		<input type="text" class="form-control" name="pnames" id="pnames" placeholder="Parent/Guardian Names" required="">
+	  </div>
+		<div>
+		<label for="MailingAddress">Parent/Guardian Mailing Address e.g. P.O. Box 4461-30100 Eldoret</label>
+		<input type="text" class="form-control" name="pmailingaddress" id="pmailingaddress" placeholder="Mailing Address" required="">
+	  </div>
+	  <div>
+		<label for="MobileNo">Parent/Guardian Mobile No</label>
+		<input type="text" class="form-control" name="pmobileno" id="pmobileno" placeholder="Mobile No" required="">
+	  </div>
+	  <div>
+		<label for="email">Parent/Guardian Email Address</label>[Optional]
+		<input type="email" class="form-control" id="pemail" name="pemail" placeholder="Email"> 
+	  </div>
+	  </div>
+	  
+	  	  <div class="tab"><h2>Step 4: Select Course you want to apply</h2>
+	  
+	   		<div>
+		<label for="Course level">Course level</label>
+		
+										
+										<select name="courselevel" id="courselevel" class="form-control" required="">
+										<option value="" selected="">- Select -</option>
+											<option value="9">Artisan</option>
+											<option value="4">Certificate</option>
+											<option value="0">Diploma</option>
+											<option value="10">Higher Diploma</option>
+										</select>
+										
+			</div>
+								
+		
+		
+		<div>
+		<label for="CourseName">Department</label>
+		      <select id="department" name="department" class="form-control" required="">
+			<option value="" selected="">- Select course level first -</option>
+            <option value="12">AGRICULTURE AND ENVIRONMENTAL STUDIES</option><option value="17">APPLIED SCIENCES DEPARTMENT</option><option value="11">BUSINESS STUDIES</option><option value="7">CIVIL AND BUILDING ENGINEERING</option><option value="59">COMPUTING AND INFORMATICS DEPARTMENT</option><option value="3">ELECTRICAL &amp; ELECTRONICS ENGINEERING</option><option value="9">ENTREPRENEURSHIP AND HUMAN RESOURCE DEPARTMENT</option><option value="4">HEALTH SCIENCES</option><option value="13">HOSPITALITY AND INSTITUTIONAL MANAGEMENT</option><option value="45">LIBERAL STUDIES</option><option value="6">MECHANICAL AND AUTOMOTIVE ENGINEERING</option><option value="10">TOWN CAMPUS - ZION MALL</option>		</select>
+		</div>
+	  
+	  <div>
+		<label for="CourseName">Course Name</label>
+			<select name="course" placeholder="Course" id="course" class="form-control" required="">
+			</select>
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  <div class="tab"><h2>Step 5: Academic details</h2>
+	<div>
+		<label for="kcseindexno">KCSE Index Number</label>
+		<input type="text" class="form-control" id="kcseindexno" name="kcseindexno" placeholder="KCSE Index No" required="" maxlength="15">
+	  </div>
+	  <div>
+		<label for="kcseyear">KCSE Year</label>
+		<input type="text" class="form-control" name="kcseyear" placeholder="KCSE Year" required="" maxlength="4">
+	  </div>
+	    <div>
+		<label for="kcsemeangrade">KCSE Mean Grade</label>
+		
+				<select name="kcsemeangrade" id="kcsemeangrade" class="form-control" required="">
+										<option value="" selected="">- Select -</option>
+											<option value="A">A</option>
+											<option value="A-">A-</option>
+											<option value="B+">B+</option>
+											<option value="B">B</option>
+											<option value="B-">B-</option>
+											<option value="C+">C+</option>
+											<option value="C">C</option>
+											<option value="C-">C-</option>
+											<option value="D+">D+</option>
+											<option value="D">D</option>
+											<option value="D-">D-</option>
+										
+										</select>
+		
+	  </div>
+	   <div>
+		<label for="kcseyear">KCSE Subjects Performance.</label>Enter the individual subject performance separated by comma e.g. English=C+,Maths=B-,Biology=D+
+		<input type="textarea" required="" rows="3" cols="50" class="form-control" name="kcsesubjectsperformance" placeholder="KCSE Subject Performance">
+	  </div>
+	      <div>
+		<label for="schoolname">High School Name</label>
+		<input type="text" required="" class="form-control" name="SchoolName" placeholder="High School Name" id="SchoolName">
+	  </div>
+	  	        <div>
+		<label for="mpesaphone">MPESA Number to use to pay application fee[Ksh.750]</label>
+		<input type="text" required="" class="form-control" name="mpesaphone" placeholder="MPESA Number" id="mpesaphone">
+	<font color="red"><h6><u>After making payments ensure you click the complete button to finish the application process</u> </h6></font>
 
-        </div>
-        <div class="content">
-            <h1>Advertisment & <br><span>Marketinng</span> <br>Products</h1>
-            <p class="par">As company of WheezyTech, we will take part on advertising and 
-                <br>marketing of your products all over the world. We will asure you that after the process their 
-                <br>will be changes in your organization/company moving from one level to another.</p>
+	  </div>
+	
+	  </div>
+	  <div style="overflow:auto;">
+	    <div style="float:right; margin-top: 5px;">
+	      	<button type="button" class="previous" style="display: none;">Previous</button>
+	      	<button type="button" class="next">Next</button>
+			<button type="button" class="submit" style="display: none;">Submit</button>
+	    </div>
+	  </div>
+	  <!-- Circles which indicates the steps of the form: -->
+	  <div style="text-align:center;margin-top:40px;">
+	    <span class="step active">1</span>
+	    <span class="step">2</span>
+	    <span class="step">3</span>
+	    <span class="step">4</span>
+		<span class="step">5</span>
+		
+	  </div>
+	</form>
+	</div>
 
-                <button class="cn"><a href="#">JOIN US</a></button>
 
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name=" email" placeholder="Enter Email Here">
-                    <input type="password" name=" " placeholder="Enter password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
+<script>
+         $("#department").change(function(){
+                var deptid = $(this).val();
+				var mycourselevel = document.forms['myForm']['courselevel'].value;
+							   $.ajax({
+                    url: 'getCourses.php',
+                    type: 'post',
+                    data: {department:deptid,courselevel:mycourselevel},
+                   success:function(response){
+						var obj=JSON.parse(response);
+						    var len = response.length;
+                       $("#course").empty();
+					   $("#course").append("<option selected value=''>-Select-</option>");
+                        for( var i = 1; i<len; i++){
+                            var id = obj[i]['BillingID'];
+						    var name = obj[i]['CourseName'];
 
-                    <p class="link">Don't Have an Account<br>
-                    <a href="#">Sign Up </a>Here</a>
-                    <p class="liw">Log in with</p>
+                            $("#course").append("<option value='"+id+"'>"+name+"</option>");
 
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
-</html>
+                        }
+					
+                    }
+                });
+				//$("#course").append("<option selected value='0'>-Select-</option>");
+				//$("#course").val("SELECT");
+            });
+			var $selectAll = $( "input:radio[name=courselevel]" );
+			$selectAll.on( "change", function() {
+        
+	
+			 $("#course").empty();
+			 $("#department").append("<option selected value=''>-Select-</option>");
+    });
+	
+	
+</script>
+<script>
+ 	       				
+		            $("#courselevel").change(function(){ 
+						$("#course").empty();
+						
+						$("#department").append("<option selected value=''>-Select-</option>");
+						});
+				
+						  
+		 
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62de563654f06e12d88b2ae5/1g8q81idr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body>
